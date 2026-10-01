@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para Stefany — Un nuevo comienzo ✨</title>
+
+    <meta
+        name="description"
+        content="Un pequeño mensaje para Stefany al comenzar un nuevo mes."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         CURSOR / EFECTOS
+    ========================================== -->
+
+    <div class="cursor-glow"></div>
+
+    <div class="floating-particles" aria-hidden="true">
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+        <span>·</span>
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+        <span>·</span>
+    </div>
+
+
+    <!-- =========================================
+         MÚSICA
+    ========================================== -->
+
+    <audio id="musica" loop preload="metadata">
+        <!--
+            PON AQUÍ TU CANCIÓN:
+            musica/tu-musica.mp3
+        -->
+        <source src="musica/tu-musica.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- =========================================
+         CONTROL DE MÚSICA
+    ========================================== -->
+
+    <button
+        class="music-control"
+        id="musicControl"
+        aria-label="Reproducir música"
+    >
+        <span class="music-icon">♫</span>
+        <span id="musicText">Música</span>
+    </button>
+
+
+    <!-- =========================================
+         NAVEGACIÓN
+    ========================================== -->
+
+    <nav class="nav">
+
+        <div class="nav-logo">
+            S.N<span></span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#mensaje">Mensaje</a>
+            <a href="#recuerdos">Recuerdos</a>
+            <a href="#sorpresas">Sorpresas</a>
+        </div>
+
+    </nav>
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <header class="hero">
+
+        <div class="hero-orbit orbit-1"></div>
+        <div class="hero-orbit orbit-2"></div>
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                <span></span>
+                UN NUEVO COMIENZO
+                <span></span>
+            </div>
+
+            <p class="fecha">
+                
+            </p>
+
+            <h1>
+                Para
+                <em>Stefany</em>
+            </h1>
+
+            <div class="gold-line"></div>
+
+            <p class="hero-text">
+                Hay comienzos que no necesitan grandes palabras.
+                A veces basta con desearle a alguien que los próximos
+                días estén llenos de cosas bonitas.
+            </p>
+
+            <button class="main-button" id="startButton">
+                <span>Descubrir el mensaje</span>
+                <b>↓</b>
+            </button>
+
+        </div>
+
+        <div class="scroll-indicator">
+            <span></span>
+            DESLIZA
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         MENSAJE PRINCIPAL
+    ========================================== -->
+
+    <section class="section message-section" id="mensaje">
+
+        <div class="section-number">
+            
+        </div>
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                UNA PEQUEÑA DEDICATORIA
+            </p>
+
+            <h2>
+                Que este mes<br>
+                <em>te sorprenda.</em>
+            </h2>
+
+        </div>
+
+
+        <div class="message-card">
+
+            <div class="quote-mark">“</div>
+
+            <p>
+                Stefany, comienza un nuevo mes y con él llegan
+                nuevas oportunidades, nuevos momentos y nuevas
+                razones para sonreír.
+            </p>
+
+            <p>
+                Deseo que encuentres tranquilidad en los días
+                difíciles, alegría en los días buenos y pequeñas
+                razones para sentir que todo está tomando su lugar.
+            </p>
+
+            <p>
+                Que nunca te falten sueños por perseguir,
+                personas que te quieran bien y momentos que
+                merezcan convertirse en recuerdos.
+            </p>
+
+            <div class="message-signature">
+                <span>Con cariño</span>
+                <strong>Para Stefany ✦</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FRASE DESTACADA
+    ========================================== -->
+
+    <section class="quote-section">
+
+        <div class="quote-decoration">✦</div>
+
+        <p>
+            “Que todo lo bonito que estás esperando
+            encuentre su camino hacia ti.”
+        </p>
+
+        <span>
+            — Un deseo para este nuevo mes
+        </span>
+
+    </section>
+
+
+    <!-- =========================================
+         FOTOGRAFÍAS
+    ========================================== -->
+
+    <section class="section memories-section" id="recuerdos">
+
+        <div class="section-heading centered">
+
+            <p class="eyebrow">
+                MOMENTOS
+            </p>
+
+            <h2>
+                Tres pequeños<br>
+                <em>recuerdos.</em>
+            </h2>
+
+            <p class="heading-description">
+            
+                Al tocarlas podrás verlas en grande.
+            </p>
+
+        </div>
+
+
+        <div class="gallery">
+
+            <!-- FOTO 1 -->
+            <button
+                class="photo-card photo-one"
+                data-image="fotos/foto1.jpg"
+                data-caption="Un momento para recordar"
+            >
+
+                <div class="photo-number">
+                    
+                </div>
+
+                <img
+                    src="fotos/foto1.jpg"
+                    alt="Fotografía especial de Stefany"
+                >
+
+                <div class="photo-overlay">
+                    <span>Ver fotografía</span>
+                    <b>↗</b>
+                </div>
+
+            </button>
+
+
+            <!-- FOTO 2 -->
+            <button
+                class="photo-card photo-two"
+                data-image="fotos/foto2.jpg"
+                data-caption="Una sonrisa que merece ser recordada"
+            >
+
+                <div class="photo-number">
+                    
+                </div>
+
+                <img
+                    src="fotos/foto2.jpg"
+                    alt="Fotografía especial de Stefany"
+                >
+
+                <div class="photo-overlay">
+                    <span>Ver fotografía</span>
+                    <b>↗</b>
+                </div>
+
+            </button>
+
+
+            <!-- FOTO 3 -->
+            <button
+                class="photo-card photo-three"
+                data-image="fotos/foto3.jpg"
+                data-caption="Otro recuerdo para guardar"
+            >
+
+                <div class="photo-number">
+                    
+                </div>
+
+                <img
+                    src="fotos/foto3.jpg"
+                    alt="Fotografía especial de Stefany"
+                >
+
+                <div class="photo-overlay">
+                    <span>Ver fotografía</span>
+                    <b>↗</b>
+                </div>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         SECCIÓN DE PUNTOS / MENSAJES
+    ========================================== -->
+
+    <section class="section surprises-section" id="sorpresas">
+
+        <div class="section-heading centered">
+
+            <p class="eyebrow">
+                PEQUEÑOS DETALLES
+            </p>
+
+            <h2>
+                Hay mensajes<br>
+                <em>esperándote.</em>
+            </h2>
+
+            <p class="heading-description">
+                Toca los puntos dorados. Cada uno guarda
+                un pequeño deseo para ti.
+            </p>
+
+        </div>
+
+
+        <div class="message-orbit">
+
+            <div class="orbit-ring"></div>
+
+            <!-- PUNTO 1 -->
+            <button
+                class="message-dot dot-1"
+                data-message="Que nunca te falten motivos para sonreír."
+            >
+                <span></span>
+                <b>01</b>
+            </button>
+
+
+            <!-- PUNTO 2 -->
+            <button
+                class="message-dot dot-2"
+                data-message="Que este mes te acerque un poquito más a tus sueños."
+            >
+                <span></span>
+                <b>02</b>
+            </button>
+
+
+            <!-- PUNTO 3 -->
+            <button
+                class="message-dot dot-3"
+                data-message="Que encuentres paz incluso en los días que parezcan difíciles."
+            >
+                <span></span>
+                <b>03</b>
+            </button>
+
+
+            <!-- PUNTO 4 -->
+            <button
+                class="message-dot dot-4"
+                data-message="Que recibas buenas noticias cuando menos las esperes."
+            >
+                <span></span>
+                <b>04</b>
+            </button>
+
+
+            <!-- PUNTO 5 -->
+            <button
+                class="message-dot dot-5"
+                data-message="Que siempre tengas alguien con quien compartir tus mejores momentos."
+            >
+                <span></span>
+                <b>05</b>
+            </button>
+
+
+            <!-- PUNTO 6 -->
+            <button
+                class="message-dot dot-6"
+                data-message="Que este nuevo mes tenga más momentos felices de los que imaginas."
+            >
+                <span></span>
+                <b>06</b>
+            </button>
+
+
+            <div class="center-message">
+
+                <span class="center-star">✦</span>
+
+                <p id="dotMessage">
+                    Elige un punto
+                </p>
+
+                <small>
+                    cada uno tiene algo para ti
+                </small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FRASES INTERACTIVAS
+    ========================================== -->
+
+    <section class="random-section">
+
+        <div class="random-content">
+
+            <p class="eyebrow">
+                UNA FRASE PARA HOY
+            </p>
+
+            <div class="random-quote" id="randomQuote">
+                “Lo bonito también está por llegar.”
+            </div>
+
+            <button
+                class="outline-button"
+                id="newQuoteButton"
+            >
+                <span>Quiero otra</span>
+                <b>✦</b>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FINAL
+    ========================================== -->
+
+    <section class="final-section">
+
+        <div class="final-stars">
+            ✦　·　✧　·　✦
+        </div>
+
+        <p class="eyebrow">
+            PARA TERMINAR
+        </p>
+
+        <h2>
+            Que tengas un<br>
+            <em>hermoso mes.</em>
+        </h2>
+
+        <p class="final-text">
+            Que cada día traiga consigo algo que te haga
+            sentir agradecida, tranquila y feliz.
+        </p>
+
+        <div class="final-name">
+            Stefany
+        </div>
+
+        <div class="gold-line small"></div>
+
+        <button
+            class="main-button final-button"
+            id="topButton"
+        >
+            <span>Volver al inicio</span>
+            <b>↑</b>
+        </button>
+
+    </section>
+
+
+    <footer>
+        <span>✦</span>
+        Hecho especialmente para Stefany
+        <span>✦</span>
+    </footer>
+
+
+    <!-- =========================================
+         MODAL DE FOTOGRAFÍA
+    ========================================== -->
+
+    <div
+        class="modal"
+        id="photoModal"
+        aria-hidden="true"
+    >
+
+        <button
+            class="modal-close"
+            id="closeModal"
+            aria-label="Cerrar fotografía"
+        >
+            ×
+        </button>
+
+        <div class="modal-content">
+
+            <img
+                id="modalImage"
+                src=""
+                alt=""
+            >
+
+            <p id="modalCaption"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         MENSAJE EMERGENTE
+    ========================================== -->
+
+    <div
+        class="toast"
+        id="toast"
+    >
+        <span>✦</span>
+        <p></p>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
